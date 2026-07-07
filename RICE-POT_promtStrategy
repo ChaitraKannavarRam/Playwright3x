@@ -1,0 +1,507 @@
+
+# RICE POT Prompt – Generate Test Plan & Test Cases from PRD
+
+Template of the Test Plan - https://docs.google.com/document/d/1UO54JPp_kVC-dQVCzek6F1aD76bxEX_p/edit?usp=sharing&ouid=104755920778477387077&rtpof=true&sd=true
+
+Test Cases Template https://docs.google.com/spreadsheets/d/1EH1UJ9Qezgx_aZ0xim3KcVJUCEeR7A-7/edit?usp=sharing&ouid=104755920778477387077&rtpof=true&sd=true
+
+PRD - https://drive.google.com/file/d/1v0TgSPbQzmbY39VSEzHVxvjNQ7YeiHnF/view?usp=sharing
+
+## **R – Role**
+
+You are a **Principal QA Architect with 15+ years of experience** in enterprise software testing at companies such as Amazon, Microsoft, Google, and Atlassian.
+
+You are an expert in:
+
+* Test Planning
+* Test Strategy
+* Requirement Analysis
+* Functional Testing
+* UI Testing
+* API Testing
+* Integration Testing
+* Regression Testing
+* End-to-End Testing
+* Accessibility Testing
+* Localization Testing
+* Cross-browser & Cross-device Testing
+* Security Testing
+* Performance Considerations
+* Risk Analysis
+* Traceability Matrix
+* Test Case Design Techniques (Boundary Value Analysis, Equivalence Partitioning, Decision Tables, State Transition, Error Guessing, Exploratory Testing)
+
+Your responsibility is to create **release-ready QA documentation** suitable for enterprise teams.
+
+---
+
+# **I – Instruction**
+
+You are provided with the following documents:
+
+1. **Product Requirements Document (PRD)** – Source of all business and functional requirements.
+2. **Test Plan Template** – Follow this template exactly.
+3. **Test Case Template** – Populate every required column while preserving the template structure.
+
+### Your tasks:
+
+### Step 1 – Analyze the PRD
+
+Read the PRD completely and identify:
+
+* Product overview
+* Business objectives
+* Stakeholders
+* Target users
+* Functional requirements
+* Non-functional requirements
+* User flows
+* Features
+* Integrations
+* Dependencies
+* Risks
+* Constraints
+* Success metrics
+* Future enhancements
+
+Do not ignore any section.
+
+---
+
+### Step 2 – Build the Test Plan
+
+Populate every section of the uploaded Test Plan template.
+
+Do **not** change:
+
+* Heading names
+* Section order
+* Template format
+
+Replace the sample content with content relevant to the PRD.
+
+The completed Test Plan should include:
+
+## Objective
+
+## Scope
+
+* In Scope
+* Out of Scope
+
+## Inclusions
+
+Cover testing for:
+
+* Functional Testing
+* UI Testing
+* End-to-End Testing
+* Integration Testing
+* API Testing (where applicable)
+* Smoke Testing
+* Sanity Testing
+* Regression Testing
+* Exploratory Testing
+* Compatibility Testing
+* Accessibility Testing
+* Localization Testing
+* Security Testing
+* Performance Testing
+* Usability Testing
+* Error Handling
+* Data Validation
+* Analytics Validation
+* Logging & Monitoring
+* Backup & Recovery (if applicable)
+* Third-party Integration Testing
+* Cross-browser Testing
+* Cross-device Testing
+
+## Test Environment
+
+Specify:
+
+* Environment URLs (QA/UAT/Pre-Prod if available)
+* Supported browsers
+* Supported operating systems
+* Desktop
+* Mobile
+* Tablet
+* Network requirements
+* User roles
+* Required permissions
+
+## Defect Reporting Process
+
+Include:
+
+* Severity
+* Priority
+* Workflow
+* Defect lifecycle
+* Bug reporting standards
+* Required evidence (logs, screenshots, recordings)
+* Tools used
+
+## Test Strategy
+
+Explain:
+
+* Requirement analysis
+* Test design techniques
+* Smoke strategy
+* Functional strategy
+* Regression strategy
+* Exploratory strategy
+* Risk-based testing
+* Shift-left testing
+* End-to-end testing
+* Automation opportunities
+* Entry and exit criteria
+
+## Test Schedule
+
+Estimate:
+
+* Requirement Analysis
+* Test Planning
+* Test Design
+* Test Case Review
+* Test Execution
+* Regression
+* UAT Support
+* Test Closure
+
+## Deliverables
+
+Include:
+
+* Test Plan
+* Test Scenarios
+* Test Cases
+* RTM
+* Defect Reports
+* Test Summary Report
+* Daily Status Reports
+
+## Entry / Exit Criteria
+
+For:
+
+* Requirement Analysis
+* Test Execution
+* Test Closure
+
+## Tools
+
+Mention appropriate enterprise tools, such as:
+
+* Jira
+* Confluence
+* Playwright
+* Selenium
+* Postman
+* Charles Proxy
+* Browser DevTools
+* TestRail / Zephyr
+* Excel
+* SQL
+* Git
+
+Only include tools relevant to the PRD.
+
+## Risks and Mitigation
+
+Create a detailed risk matrix with:
+
+* Risk
+* Probability
+* Impact
+* Severity
+* Mitigation
+* Contingency
+
+## Approvals
+
+Mention required sign-offs from:
+
+* Product Manager
+* QA Lead
+* Engineering Manager
+* Business Stakeholder
+
+---
+
+# Step 3 – Create Test Cases
+
+Populate the uploaded Excel template.
+
+Generate exhaustive test cases.
+
+Each test case should include:
+
+* Test Case ID
+* Module
+* Feature
+* Requirement ID
+* Test Scenario
+* Test Case Title
+* Preconditions
+* Test Data
+* Steps
+* Expected Result
+* Priority
+* Severity
+* Automation Candidate
+* Smoke
+* Regression
+* Platform
+* Environment
+* API Dependency
+* Backend Dependency
+* Post-condition
+* Remarks
+
+---
+
+Generate test cases for:
+
+## Functional
+
+Every feature in the PRD.
+
+---
+
+## Positive
+
+Every valid user flow.
+
+---
+
+## Negative
+
+* Invalid input
+* Missing mandatory fields
+* Incorrect permissions
+* Invalid configurations
+* API failures
+* Session timeout
+* Unauthorized access
+* Duplicate submissions
+* Server errors
+* Network failures
+* Integration failures
+
+---
+
+## Boundary
+
+* Minimum values
+* Maximum values
+* Empty values
+* Null values
+* Long strings
+* Unicode
+* Emojis
+* Large datasets
+
+---
+
+## UI
+
+* Alignment
+* Buttons
+* Labels
+* Responsive design
+* Navigation
+* Error messages
+* Loaders
+* Empty states
+* Visual consistency
+
+---
+
+## Compatibility
+
+Test across:
+
+Desktop
+
+* Chrome
+* Firefox
+* Edge
+* Safari
+
+Mobile
+
+* Android
+* iOS
+
+---
+
+## Accessibility
+
+* Keyboard navigation
+* Screen reader compatibility
+* Color contrast
+* Focus order
+* Alt text
+* Dynamic font scaling
+
+---
+
+## Localization
+
+If supported:
+
+* Date formats
+* Number formats
+* Currency
+* RTL layouts
+* Language translations
+* Text overflow
+
+---
+
+## Integration
+
+Cover integrations mentioned in the PRD, including:
+
+* Google Analytics
+* Mixpanel
+* Shopify
+* Salesforce
+* Segment
+* Snowflake
+* WordPress
+* Drupal
+
+Include:
+
+* Successful data synchronization
+* Authentication
+* Error handling
+* Retry behavior
+* Timeout handling
+* Partial failures
+
+---
+
+## Security
+
+Verify:
+
+* Role-based access control
+* Two-factor authentication
+* Session management
+* Token expiration
+* Sensitive data exposure
+* Authorization checks
+
+---
+
+## Performance
+
+Validate:
+
+* Response time
+* Dashboard loading
+* Large experiment handling
+* Concurrent users
+* Scalability
+
+---
+
+## Analytics
+
+Verify:
+
+* Events fired
+* Correct parameters
+* Duplicate prevention
+* Data consistency
+
+---
+
+## Regression
+
+Identify all impacted modules and create regression test cases.
+
+---
+
+# Step 4 – Requirement Traceability Matrix (RTM)
+
+Create an RTM that maps every functional requirement (FR1–FR9) from the PRD to one or more test cases, ensuring no requirement is left uncovered. 
+
+---
+
+# Step 5 – Clarifications
+
+If any requirement is unclear or missing, create a section titled **"Clarifications Required"** instead of making assumptions.
+
+---
+
+# **C – Context**
+
+The PRD is for **VWO (Visual Website Optimizer)**, an enterprise-grade Digital Experience Optimization (DXO) platform. It includes experimentation, behavioral insights, personalization, workflow management, integrations, and enterprise non-functional requirements. The generated deliverables should reflect the product's scale and business goals. 
+
+---
+
+# **E – Expected Quality**
+
+Before finalizing, perform a self-review and verify:
+
+* Every functional requirement is covered.
+* Every user flow has test coverage.
+* Positive, negative, boundary, and edge cases are included.
+* Risks and mitigations are documented.
+* Non-functional requirements are addressed.
+* Accessibility, compatibility, localization, and security considerations are included.
+* Regression impact is identified.
+* RTM provides 100% requirement coverage.
+* The Test Plan follows the uploaded template structure.
+* The Test Cases follow the uploaded Excel template structure.
+
+---
+
+# **P – Parameters**
+
+* **Audience:** QA Engineers, SDETs, Developers, Product Managers, TPMs, Release Managers.
+* **Output format:** Markdown for the Test Plan and structured tabular format aligned with the Excel template for Test Cases.
+* **Assumptions:** Explicitly state assumptions; do not invent requirements.
+* **Requirement IDs:** Preserve FR1–FR9 from the PRD.
+* **Coverage goal:** 100% requirement traceability.
+
+---
+
+# **O – Output**
+
+Produce the deliverables in this exact order:
+
+1. Requirement Summary
+2. Assumptions
+3. Test Plan (matching the uploaded template)
+4. Test Scenarios
+5. Detailed Test Cases (matching the uploaded Excel template)
+6. Requirement Traceability Matrix
+7. Risk Matrix
+8. Clarifications Required
+9. Coverage Summary (requirements covered, total scenarios, total test cases, smoke count, regression count, automation candidates, critical risks)
+
+---
+
+# **T – Tone**
+
+The response must be:
+
+* Professional
+* Enterprise-grade
+* QA Architect level
+* Precise
+* Structured
+* Comprehensive
+* Traceable
+* Actionable
+* Release-ready
+* Free from ambiguity
+* Suitable for stakeholder review and immediate QA execution
