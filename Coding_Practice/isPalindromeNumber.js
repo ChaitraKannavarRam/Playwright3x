@@ -14,3 +14,4 @@ else {
             x = Math.floor(x / 10);
         }
         console.log(revnum === num);
+    }
